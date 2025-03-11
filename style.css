@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+    font-family: "Poppins", sans-serif;
+
+}
+
+::selection{
+    color: #1d1d1d;
+    background-color: #c9ffff;
+    
+}
+
+.price-list{
+    background: url(image/freepik__the-style-is-candid-image-photography-with-natural__28825.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.price-list::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    height: 100%;
+    background-color: #141414;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+
+}
+
+.cont{
+    width: 70%;
+    background-color: #202020;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    margin: 200px 20px;
+    padding: 30px 30px 30px;
+}
+
+.top-text{
+    min-width: 30%;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 22px;
+    text-align: center;
+}
+
+.top-text p{
+    color: #919191;
+    padding: 20px;
+    margin-bottom: 0;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 3%;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 10px;
+    z-index: 11111111;
+}
+
+.buttons button {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .2s ease;
+    min-width: 33%;
+    max-width: 400px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+
+}
+
+
+
+
+.buttons button:hover{
+    background-color: #d4f3ff;
+    color: #202020;
+}
+
+
+.img-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 100px;
+    width: 100%;
+}
+
+.item{
+    max-width: 70%;
+    min-width: 200px;
+
+    position: relative;
+}
+
+#popular::before{
+    content: "Popular";
+    color: #202020;
+    background-color: rgb(255, 187, 0);
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 14px;
+    width: fit-content;
+    z-index: 3;
+}
+.item img{
+    width: 100%;
+    border-radius: 25px;
+    filter: blur(.5rem);
+    transition: .4s;
+}
+
+@media (max-width: 670px){
+    .item img{
+        width: 100%;
+    }
+}
+
+.item img:hover{
+    filter: blur(0);
+}
+
+.nameandprice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nameandprice h2{
+    color: #eee;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.nameandprice span{
+    background-color: rgb(187 221 204);
+    padding: 5px;
+    border-radius: 5px;
+    color: #202020;
+    margin: 10px auto;
+}
+
+.item p{
+    text-align: start;
+    margin-top: 13px;
+    text-align: center;
+}
+
+p i{
+    color: gold;
+}
+
+p span{
+    color: #919191;
+    padding-left: 4px;
+}
+
+.Go-faisal{
+    text-decoration: none;
+    color: #1d1d1d;
+    background-color: rgb(255, 183, 0);
+    padding: 15px;
+    border-radius: 10px;
+    color: #eee;
+    width: fit-content;
+    margin:  10px;
+}
+
+.a{
+    margin: 50px ;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+    width: 1.5vw;
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #464646ee;
+}
